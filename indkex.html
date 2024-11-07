@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@6,100..1000&display=swap" rel="stylesheet">
+    <title>Degree converter</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>Degree converter</header>
+        <form action="#">
+            <div class="degree">
+            <p>Enter Amount</p>
+            <input type="text"  value="1">
+        </div>
+        <div class="drop-list">
+            <div class="from">
+                <p>From</p>
+                <div class="select-box">
+                    
+                    <select >
+                        <option value="°C">celsius °C</option>
+                        <option value="°F"> Fahrenheit °F</option>
+                        <option value="K">kelvin K</option>
+                    </select>
+                </div>
+            </div>
+            <div class="icon"><i class="fas fa-exchange"></i></div>
+                <div class="TO">
+                    <p>TO</p>
+                    <div class="select-box">
+                        
+                        <select >
+                            <option value="°f"> Fahrenheit °F</option>
+                            <option value="°c">celsius °C</option>
+                            <option value="K">kelvin K</option>
+                        </select>
+                        <br>
+      
+                    </div>
+                </div>
+        
+
+            </div>
+            <button onclick="fahrenheitTocelsius() " >convert</button>
+            <div class="exchange-rate">
+                <input type="text" id="celsiusresult">
+                <select >
+                    <option value="°f" > Fahrenheit °F</option>
+                    <option value="°c">celsius °C</option>
+                    <option value="K">kelvin K</option>
+                </select>
+            </div>
+        </div>
+                
+        </form>
+    </div>
+    <script >
+     let  fahrrenheitinput = document.getElementById("  fahrrenheitinput");
+     let  celsiusresult = document.getElementById("   celsiusresult");
+     let  kelvinresult = document.getElementById("   kelvinresult");
+      
+        function fahrenheitTocelsius() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     
+     function celsiusTofahrenheit() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     function kelvinTocelsius() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     function kelvinTofahrenheit() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     function fahrenheitTokelvin() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     function celsiusTokelvin() {
+        let celsius = Number(fahrenheitinput.value)-32 * 5/9 ;
+        
+        celsiusresult.innerHTML = celsius +  " °c"
+     }
+     </script>
+</body>
+</html>
